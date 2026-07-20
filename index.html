@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html class="dark" lang="pt-BR">
- <head>
-  <meta charset="utf-8"/>
-  <link href="https://media.base44.com/images/public/6a5e6000f52d90d1feb75b81/c45e616d4_logo.png" rel="icon" type="image/svg+xml"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="ERP completo para assistência técnica Dark Cache - Gestão de ordens de serviço, estoque, financeiro e clientes." name="description"/>
-  <link href="/manifest.json" rel="manifest"/>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<html class="dark" lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <link href="https://media.base44.com/images/public/6a5e6000f52d90d1feb75b81/c45e616d4_logo.png" rel="icon" type="image/svg+xml">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ERP completo para assistência técnica Dark Cache - Gestão de ordens de serviço, estoque, financeiro e clientes." name="description">
+  <link href="/manifest.json" rel="manifest">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <title>
    Dark Cache ERP — Assistência Técnica
   </title>
   <script crossorigin="" src="/assets/index-BJkT4P0c.js" type="module">
   </script>
-  <link crossorigin="" href="/assets/index-MAAgRCla.css" rel="stylesheet"/>
+  <link crossorigin="" href="/assets/index-MAAgRCla.css" rel="stylesheet">
   <script type="module">
    if (window.self === window.top) {
   let lastPath = "";
@@ -47,14 +45,36 @@
   trackPageView();
 }
   </script>
-  <meta content="yes" name="mobile-web-app-capable"/>
-  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-  <meta content="Dark Cache ERP" name="apple-mobile-web-app-title"/>
+  <meta content="yes" name="mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="Dark Cache ERP" name="apple-mobile-web-app-title">
   <script async="true" data-app-id="6a5e6000f52d90d1feb75b81" data-platform-url="https://app.base44.com" src="/static/js/badge.js">
   </script>
- </head>
+ <style>
+      @keyframes badge-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .badge-spinner {
+        animation: badge-spin 1s linear infinite;
+      }
+      @keyframes base44-fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes base44-scale-in {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style></head>
  <body>
-  <div id="root">
-  </div>
- </body>
-</html>
+  <div id="root"><div class="min-h-screen bg-background flex items-center justify-center p-4"><div class="fixed inset-0 overflow-hidden pointer-events-none"><div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div><div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div></div><div class="relative w-full max-w-2xl"><div class="text-center mb-8"><div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl gradient-primary glow-primary mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu w-8 h-8 text-white"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg></div><h1 class="text-2xl font-bold text-white tracking-tight">DARK CACHE</h1><p class="text-sm text-muted-foreground mt-1">Acompanhe sua ordem de serviço</p></div><div class="rounded-xl border bg-card text-card-foreground shadow glass-card border-border p-6 mb-6"><form class="space-y-3"><label class="text-sm text-muted-foreground">Digite o número da sua OS</label><div class="flex gap-2"><div class="relative flex-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input class="flex w-full rounded-md border px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm pl-9 bg-secondary/50 border-border h-11" placeholder="Ex: OS-2025-123456" value=""></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary shadow hover:bg-primary/90 h-9 py-2 gradient-primary glow-primary-sm text-white border-0 px-6" type="submit">Buscar</button></div></form></div><p class="text-center text-xs text-muted-foreground mt-8">Dark Cache • Assistência Técnica Especializada</p></div></div><div class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"><div class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></div></div></div>
+ 
+
+</body></html>
