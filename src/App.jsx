@@ -1,19 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Acompanhar from './pages/Acompanhar'; // Ajuste o caminho se necessário
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Acompanhar from './pages/Acompanhar';
 
-function App() {
+export default function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        {/* Rota para a página de acompanhamento com ou sem ID na URL */}
         <Route path="/acompanhar/:osId?" element={<Acompanhar />} />
-
-        {/* Se você tiver outras páginas, adicione-as aqui. */}
-        {/* Exemplo: <Route path="/" element={<div>Página Inicial</div>} /> */}
+        <Route path="*" element={<Navigate to="/acompanhar" replace />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
-
-export default App;

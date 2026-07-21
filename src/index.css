@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-primary {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
+.glow-primary {
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.35);
+}
+
+.glow-primary-sm {
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+}

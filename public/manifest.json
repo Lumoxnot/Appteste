@@ -1,0 +1,8 @@
+{
+    "name": "Dark Cache ERP",
+    "short_name": "Dark Cache",
+    "start_url": "/acompanhar",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#7c3aed"
+  }
