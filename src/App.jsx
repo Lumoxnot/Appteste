@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AcompanharOS from './components/AcompanharOS'; // Ajuste o caminho conforme necessário
+import Acompanhar from './pages/Acompanhar'; // Ajuste o caminho se necessário
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* Rota para a página de acompanhamento com ou sem ID na URL */}
-        <Route path="/acompanhar/:osId?" element={<AcompanharOS />} />
-        {/* Adicione outras rotas do seu aplicativo aqui, se houver */}
-        {/* Exemplo: <Route path="/" element={<HomePage />} /> */}
+        <Route path="/acompanhar/:osId?" element={<Acompanhar />} />
+
+        {/* Se você tiver outras páginas, adicione-as aqui. */}
+        {/* Exemplo: <Route path="/" element={<div>Página Inicial</div>} /> */}
       </Routes>
     </Router>
   );
