@@ -1,6 +1,5 @@
 {
   "rewrites": [
-    { "source": "/acompanhar/:id", "destination": "/index.html" },
-    { "source": "/acompanhar", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
